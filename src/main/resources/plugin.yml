@@ -1,0 +1,20 @@
+name: DiolezSpectate
+version: 1.0.0
+# This matches your Java package and class exactly:
+main: me.diolezz.diolezspectate.DiolezSpectate
+api-version: "1.21"
+authors: [Diolezz]
+description: High-performance CPVP spectating plugin with strict POV locking.
+website: https://github.com/Diolezz
+
+commands:
+  spectate:
+    description: Main spectate command.
+    usage: /spectate <request|accept|deny|leave>
+    permission: diolezspectate.use
+    aliases: [spec]
+
+permissions:
+  diolezspectate.use:
+    description: Allows usage of all DiolezSpectate commands.
+    default: op
